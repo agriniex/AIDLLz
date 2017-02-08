@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AIDLL</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="price">Price</string>
+    <string name="door_count">Door Count</string>
+    <string name="release_year">Release year</string>
+    <string name="power">Power</string>
+    <string name="weight">Weight</string>
+    <string name="body_type">Body Type</string>
+    <string name="fuel_tank_capacity">Fuel tank capacity</string>
+    <string name="fuel_type">Fuel type</string>
+    <string name="top_speed">Top Speed</string>
+    <string name="full_weight">Full weight</string>
+    <string name="result">Result:</string>
+    <string name="honorable_mention">Honorable Mention:</string>
+
+    <string name="title_activity_splash">Splash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
