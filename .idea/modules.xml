@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AIDLLNew.iml" filepath="$PROJECT_DIR$/AIDLLNew.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AIDLLz.iml" filepath="$PROJECT_DIR$/AIDLLz.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

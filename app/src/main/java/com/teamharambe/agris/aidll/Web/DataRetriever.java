@@ -28,7 +28,7 @@ private DataRetrieverResponse listener;
 //        progressBar = new ProgressBar(AIDLL.getAppContext());
 //        progressBar.setVisibility(View.VISIBLE);
     }
-
+//AyyLe.mov
     @Override
     protected String doInBackground(Void... params) {
         try {
