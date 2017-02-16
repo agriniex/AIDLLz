@@ -30,6 +30,7 @@ public class CategoryDetails extends AppCompatActivity {
     Spinner categorySpinner;
     ToggleButton maximizeButton;
     Bundle extras;
+    int categoriesAviable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +59,7 @@ public class CategoryDetails extends AppCompatActivity {
         categorySpinner = (Spinner) findViewById(R.id.category_spinner);
         ArrayList<String> categories = toCategoryStringList(Arrays.asList(CategoryValues.values()));
 
+        categoriesAviable = removeSelectedCategories(categories).size();
         ArrayAdapter<String>  categoryAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, removeSelectedCategories(categories));
         categorySpinner.setAdapter(categoryAdapter);
 
@@ -102,14 +104,17 @@ public class CategoryDetails extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_add_category) {
-            String name = categorySpinner.getSelectedItem().toString();
-            Category category = new Category(name, 0);
-            boolean maximize = maximizeButton.isChecked();
-            category.setMaximize(maximize);
-            if (extras == null){
-                SelectedCategories.addCategoryToFile(getApplicationContext(), category);}
-            else {
-                Categories.updateCategory(CategoryDetails.this, Integer.parseInt(extras.getString("position")), category);
+            if (categoriesAviable > 0) {
+
+                String name = categorySpinner.getSelectedItem().toString();
+                Category category = new Category(name, 0);
+                boolean maximize = maximizeButton.isChecked();
+                category.setMaximize(maximize);
+                if (extras == null) {
+                    SelectedCategories.addCategoryToFile(getApplicationContext(), category);
+                } else {
+                    Categories.updateCategory(CategoryDetails.this, Integer.parseInt(extras.getString("position")), category);
+                }
             }
             finish();
         }
