@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="1">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="192dp"
-        android:layout_height="74dp">
+        android:layout_width="match_parent"
+        android:paddingStart="5dp"
+        android:layout_height="110dp"
+        android:paddingEnd="5dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -20,11 +21,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinnerCarModel"
-            android:layout_weight="0.03" />
+            android:layout_weight="0.02" />
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:id="@+id/modelIdField"
             android:layout_weight="0.01"
             android:visibility="invisible" />
