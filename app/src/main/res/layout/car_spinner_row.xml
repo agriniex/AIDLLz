@@ -7,21 +7,24 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:paddingStart="5dp"
-        android:layout_height="110dp"
-        android:paddingEnd="5dp">
+        android:paddingStart="0dp"
+        android:paddingEnd="8dp"
+        android:layout_height="95dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinnerCarName"
-            android:layout_weight="0.01" />
+            android:layout_weight="0"
+            android:paddingLeft="10dp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinnerCarModel"
-            android:layout_weight="0.02" />
+            android:layout_weight="0"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp" />
 
         <TextView
             android:layout_width="match_parent"

@@ -39,7 +39,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:id="@+id/categoryNameLabel" />
+            android:id="@+id/categoryNameLabel"
+            android:layout_marginLeft="5dp" />
 
 
         <Spinner
@@ -51,7 +52,8 @@
             android:text="Category Sorting Order"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView2" />
+            android:id="@+id/textView2"
+            android:layout_marginLeft="5dp" />
 
         <ToggleButton
             android:text="ToggleButton"

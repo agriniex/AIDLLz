@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways"
+            app:layout_scrollFlags="enterAlways"
             app:popupTheme="@style/AppTheme.PopupOverlay">
 
         </android.support.v7.widget.Toolbar>
@@ -73,7 +73,7 @@
                 <FrameLayout
                     android:layout_width="270dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_weight="0.04"
+                    android:layout_weight="1"
                     android:layout_height="142dp">
 
 
@@ -94,29 +94,34 @@
                     android:id="@+id/detailsPanel"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentStart="true"
                     android:layout_marginTop="13dp"
-                    android:orientation="horizontal"
-                    android:weightSum="1">
+
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="1"
+                    android:layout_alignParentStart="true">
 
                     <LinearLayout
-                        android:layout_width="164dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="0.5">
 
                         <TextView
                             android:id="@+id/priceLabel"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:text="@string/price"
                             android:textColor="@android:color/holo_green_dark"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:gravity="center_vertical" />
 
                         <TextView
                             android:id="@+id/priceText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="@android:color/holo_green_light" />
+                            android:textColor="@android:color/holo_green_light"
+                            android:gravity="center_vertical" />
 
                         <TextView
                             android:id="@+id/doorsCountLabel"
@@ -124,13 +129,15 @@
                             android:layout_height="wrap_content"
                             android:text="@string/door_count"
                             android:textColor="@android:color/holo_green_dark"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:gravity="center_vertical" />
 
                         <TextView
                             android:id="@+id/doorsCountText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="@android:color/holo_green_light" />
+                            android:textColor="@android:color/holo_green_light"
+                            android:gravity="center_vertical" />
 
                         <TextView
                             android:id="@+id/yearLabel"
@@ -138,13 +145,15 @@
                             android:layout_height="wrap_content"
                             android:text="@string/release_year"
                             android:textColor="@android:color/holo_green_dark"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:gravity="center_vertical" />
 
                         <TextView
                             android:id="@+id/yearText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="@android:color/holo_green_light" />
+                            android:textColor="@android:color/holo_green_light"
+                            android:gravity="center_vertical" />
 
                         <TextView
                             android:id="@+id/powerLabel"
@@ -152,13 +161,15 @@
                             android:layout_height="wrap_content"
                             android:text="@string/power"
                             android:textColor="@android:color/holo_green_dark"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:gravity="center_vertical" />
 
                         <TextView
                             android:id="@+id/powerText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="@android:color/holo_green_light" />
+                            android:textColor="@android:color/holo_green_light"
+                            android:gravity="center_vertical" />
 
                         <TextView
                             android:id="@+id/textView18"
@@ -166,20 +177,23 @@
                             android:layout_height="wrap_content"
                             android:text="@string/weight"
                             android:textColor="@android:color/holo_green_dark"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:gravity="center_vertical" />
 
                         <TextView
                             android:id="@+id/weightText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:textColor="@android:color/holo_green_light" />
+                            android:textColor="@android:color/holo_green_light"
+                            android:gravity="center_vertical" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        android:layout_weight="0.5">
 
                         <TextView
                             android:id="@+id/bodyTypeLabel"
@@ -275,8 +289,8 @@
 
                     <ImageView
                         android:id="@+id/honorable_car_image"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         app:srcCompat="@android:color/background_light" />
 
                     <ImageView

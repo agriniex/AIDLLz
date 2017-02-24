@@ -6,13 +6,14 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_height="66dp"
-        android:layout_width="216dp">
+        android:layout_width="match_parent"
+        android:layout_weight="0.5">
 
         <TextView
             android:text="Criteria Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.03"
+            android:layout_weight="1"
             android:id="@+id/categoryNameLabel" />
 
         <TextView
@@ -27,7 +28,8 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5">
 
         <TextView
             android:text="Sorting Order"
@@ -41,7 +43,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/sorting_order"
-            android:layout_weight="1" />
+            android:layout_weight="0.5"
+            android:paddingTop="14dp" />
     </LinearLayout>
 
 </LinearLayout>
