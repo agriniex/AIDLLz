@@ -86,7 +86,7 @@
 
                     <ImageView
                         android:id="@+id/gold_medal"
-                        android:layout_width="109dp"
+                        android:layout_width="112dp"
                         android:layout_height="100dp"
                         app:srcCompat="@drawable/gold"
                         android:contentDescription="@string/first_place_medal" />
@@ -298,10 +298,10 @@
 
                     <ImageView
                         android:id="@+id/you_tried_medal"
-                        android:layout_width="69dp"
-                        android:layout_height="90dp"
+                        android:layout_width="76dp"
                         app:srcCompat="@drawable/you_tried"
-                        android:contentDescription="@string/second_place_medal" />
+                        android:contentDescription="@string/second_place_medal"
+                        android:layout_height="84dp" />
                 </FrameLayout>
 
             </LinearLayout>

@@ -84,13 +84,15 @@
                         android:id="@+id/main_car_image"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@android:color/background_light" />
+                        app:srcCompat="@android:color/background_light"
+                        android:contentDescription="@string/main_car_image" />
 
                     <ImageView
                         android:id="@+id/gold_medal"
-                        android:layout_width="109dp"
                         android:layout_height="100dp"
-                        app:srcCompat="@drawable/gold" />
+                        app:srcCompat="@drawable/gold"
+                        android:contentDescription="@string/first_place_medal"
+                        android:layout_width="112dp" />
                 </FrameLayout>
 
                 <LinearLayout
@@ -100,8 +102,8 @@
 
                     android:layout_gravity="center_horizontal"
                     android:weightSum="1"
-                    android:layout_alignParentStart="true"
-                    android:layout_width="350dp">
+                    android:layout_width="350dp"
+                    android:baselineAligned="false">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -296,13 +298,15 @@
                         android:id="@+id/honorable_car_image"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@android:color/background_light" />
+                        app:srcCompat="@android:color/background_light"
+                        android:contentDescription="@string/second_place_car" />
 
                     <ImageView
                         android:id="@+id/you_tried_medal"
-                        android:layout_width="92dp"
-                        android:layout_height="106dp"
-                        app:srcCompat="@drawable/you_tried" />
+                        android:layout_width="76dp"
+                        android:layout_height="84dp"
+                        app:srcCompat="@drawable/you_tried"
+                        android:contentDescription="@string/second_place_medal" />
                 </FrameLayout>
 
             </LinearLayout>
