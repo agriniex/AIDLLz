@@ -18,4 +18,8 @@
     <string name="title_activity_splash">Splash</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="second_place_car">Second place car</string>
+    <string name="second_place_medal">Second place medal</string>
+    <string name="first_place_medal">First place medal</string>
+    <string name="main_car_image">Main car image</string>
 </resources>
