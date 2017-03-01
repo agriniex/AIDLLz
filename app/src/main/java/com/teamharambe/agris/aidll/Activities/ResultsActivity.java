@@ -108,6 +108,11 @@ public class ResultsActivity extends AppCompatActivity {
             honorableText.setText(chosenCars.get(1).getName() + " " + chosenCars.get(1).getModelName());
             new DownloadHonorableImageTask().execute(chosenCars.get(1).getPictureLink());
         }
+        else{
+            TextView honorableMentionLabel = (TextView) findViewById(R.id.honorable_mention_label);
+            honorableMentionLabel.setVisibility(View.INVISIBLE);
+            honorableCarImage.setVisibility(View.INVISIBLE);
+        }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.resultsToolbar);
         setSupportActionBar(toolbar);
