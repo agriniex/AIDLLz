@@ -35,7 +35,7 @@ public class ListViewListeners {
                 Intent categoryDetailsIntent = new Intent(view.getContext(), CategoryDetails.class);
                 categoryDetailsIntent.putExtra("name", categoryToEdit.getName());
                 categoryDetailsIntent.putExtra("maximize", categoryToEdit.isMaximize());
-                categoryDetailsIntent.putExtra("position", position);
+                categoryDetailsIntent.putExtra("position", Integer.toString(position));
                 view.getContext().startActivity(categoryDetailsIntent);
             }
         };
