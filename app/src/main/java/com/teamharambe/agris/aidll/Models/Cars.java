@@ -73,6 +73,31 @@ public class Cars {
         writeInFile(items, context);
     }
 
+    public static void deleteCar(Context context, int position)
+    {
+        List<String> cars = getAllSelectedCarIdList(context);
+        cars.remove(position);
+
+        JSONArray items = new JSONArray();
+
+        for (int i = 0; i < cars.size(); i++)
+        {
+            try {
+                JSONObject carToAdd = new JSONObject();
+                carToAdd.put("id", cars.get(i));
+
+                items.put(carToAdd);
+
+            } catch (JSONException jse){
+                Log.e("[JSON EXCEPTION]", jse.toString());
+            }
+
+        }
+        writeInFile(items, context);
+
+
+    }
+
 //    public static void addCar(String id, Context context)
 //    {
 //        try {

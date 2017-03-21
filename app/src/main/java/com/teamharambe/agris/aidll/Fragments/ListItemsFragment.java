@@ -82,6 +82,7 @@ public class ListItemsFragment extends Fragment {
                 carListView = (ListView) carView.findViewById(R.id.item_list);
 
                 carListView.setOnItemClickListener(ListViewListeners.setCarItemListener());
+                carListView.setOnItemLongClickListener(ListViewListeners.setCarItemLongListener(getActivity()));
 
                     fab = (FloatingActionButton) carView.findViewById(R.id.fab);
                     setCarViewDetails(carView);
@@ -178,6 +179,8 @@ public class ListItemsFragment extends Fragment {
 
         setCarItems();
     }
+
+
 
     private void setCarItems()
     {
